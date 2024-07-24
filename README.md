@@ -23,7 +23,7 @@ pip install -r requirements.txt
 To start the API server, run the following command:
 
 ```bash
-uvicorn main:app
+uvicorn main:app --reload
 ```
 
 ## Configuration
@@ -32,8 +32,8 @@ The API server reads the configuration from a file named `config.json`. The conf
 
 ```json
 {
-    "serial_port": "/dev/ttyUSB0", # Serial port of the RS-485 to USB adapter
-    "address": 1, # Modbus address of the charging station
+    "serial_port": "/dev/ttyUSB0", // Serial port of the RS-485 to USB adapter
+    "address": 1, // Modbus address of the charging station
 }
 ```
 
